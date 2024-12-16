@@ -1,1 +1,27 @@
-
+{
+  "name": "sqlark",
+  "version": "1.0.0",
+  "description": "A repository for Bash scripts and PostgreSQL utilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "bash start.sh",
+    "test": "bash test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/your-repo-name.git"
+  },
+  "keywords": [
+    "bash",
+    "postgresql",
+    "scripts"
+  ],
+  "author": "Mike Demondad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeybob/sqlark/issues"
+  },
+  "homepage": "https://github.commikeybob/sqlark#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
