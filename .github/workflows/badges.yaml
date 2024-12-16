@@ -1,0 +1,20 @@
+name: 'Readme Badges'
+
+on:
+  push:
+    branches:
+    - trunk
+
+jobs:
+  generate-badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Generate Badges
+        uses: rocktimsaikia/badge-it@master
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          badges: 'gh_license, gh_version, gh_stars, gh_open_issues, gh_closed_issues'
+          badge-style: 'flat-square'
